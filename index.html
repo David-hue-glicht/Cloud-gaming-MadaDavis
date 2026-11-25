@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090914">
+
+    <title>MADA CLOUD GAMING</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <div class="logo">
+            <span>🎮</span> MADA CLOUD
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navigation">
+            <a href="#home">Accueil</a>
+            <a href="#games">Jeux</a>
+            <a href="#about">À propos</a>
+        </nav>
+    </header>
+
+    <!-- ACCUEIL -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <span class="tag">☁️ CLOUD GAMING</span>
+
+                <h1>
+                    PLAY ANYWHERE.<br>
+                    <span>ANYTIME.</span>
+                </h1>
+
+                <p>
+                    Découvre Mada Cloud Gaming.
+                    Une nouvelle façon de jouer à tes jeux préférés.
+                </p>
+
+                <a href="#games" class="primary-btn">
+                    EXPLORER LES JEUX
+                </a>
+            </div>
+
+        </section>
+
+        <!-- RECHERCHE -->
+        <section class="games-section" id="games">
+
+            <div class="section-title">
+                <h2>🎮 Bibliothèque de jeux</h2>
+                <p>Découvre notre sélection Gaming.</p>
+            </div>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="🔎 Rechercher un jeu..."
+                autocomplete="off"
+            >
+
+            <!-- FILTRES -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">
+                    Tous
+                </button>
+
+                <button class="filter-btn" data-filter="action">
+                    Action
+                </button>
+
+                <button class="filter-btn" data-filter="racing">
+                    Course
+                </button>
+
+                <button class="filter-btn" data-filter="adventure">
+                    Aventure
+                </button>
+            </div>
+
+            <!-- CATALOGUE -->
+            <div class="game-grid" id="gameGrid">
+
+                <article class="game-card" data-category="action">
+                    <div class="game-image game-one">
+                        <span>🔥</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Free Fire</h3>
+                        <p>Action / Battle Royale</p>
+                        <button class="play-btn" data-game="Free Fire">
+                            JOUER
+                        </button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="adventure">
+                    <div class="game-image game-two">
+                        <span>⛏️</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Minecraft</h3>
+                        <p>Survie / Aventure</p>
+                        <button class="play-btn" data-game="Minecraft">
+                            JOUER
+                        </button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="racing">
+                    <div class="game-image game-three">
+                        <span>🏎️</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Asphalt</h3>
+                        <p>Course / Automobile</p>
+                        <button class="play-btn" data-game="Asphalt">
+                            JOUER
+                        </button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="action">
+                    <div class="game-image game-four">
+                        <span>🥷</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Naruto Storm</h3>
+                        <p>Combat / Anime</p>
+                        <button class="play-btn" data-game="Naruto Storm">
+                            JOUER
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="emptyMessage" hidden>
+                Aucun jeu trouvé.
+            </p>
+
+        </section>
+
+        <!-- PRESENTATION -->
+        <section class="about" id="about">
+            <h2>☁️ À propos de Mada Cloud</h2>
+
+            <p>
+                Mada Cloud Gaming est un projet de plateforme
+                de streaming de jeux vidéo accessible depuis
+                les appareils mobiles.
+            </p>
+
+            <p class="status">
+                ● PROJET EN DÉVELOPPEMENT
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>🎮 MADA CLOUD GAMING</h3>
+
+        <p>Le Gaming sans limites.</p>
+
+        <p>© 2026 Mada Cloud Gaming</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
